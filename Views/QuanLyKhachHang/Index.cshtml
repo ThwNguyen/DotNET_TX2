@@ -1,0 +1,55 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Nhập thông tin khách hàng</h2>
+<form action="/QuanLyKhachHang/NhapDuLieuKhacHang" method="post">
+    <table>
+        <tr>
+            <td>
+                Mã khách hàng:
+            </td>
+            <td>
+                <input type="text" name="maKH" />
+            </td>
+
+        </tr>
+        <tr>
+            <td>
+                Họ tên:
+            </td>
+            <td>
+                <input type="text" name="hoTen" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Địa chỉ:
+            </td>
+            <td>
+                <select name="diaChi">
+                    <option value="Hà Nội" name="diaChi">Hà Nội</option>
+                    <option value="Hải Phòng" name="diaChi">Hải Phòng</option>
+                    <option value="Quảng Ninh" name="diaChi">Quảng Ninh</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Số điện thoại:
+            </td>
+            <td>
+                <input type="text" name="dienThoai" />
+            </td>
+        </tr>
+        <tr>
+            <td>Số lần mua:</td>
+            <td>
+                <input type="text" name="soLanMua" />
+            </td>
+        </tr>
+    </table>
+    <input type="submit" name="sb" value="Kết quả" />
+</form>
+

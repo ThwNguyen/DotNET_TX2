@@ -1,0 +1,46 @@
+﻿@model IEnumerable<OnTapASP.Models.KhachHang>
+@{
+    ViewBag.Title = "Hien Thi Danh Sach";
+}
+
+<h2>Danh sách khách hàng địa chỉ Hải Phòng</h2>
+<table>
+    <tr>
+        <th>Mã KH</th>
+        <th>Họ tên</th>
+        <th>Địa chỉ</th>
+        <th>Điên thoại</th>
+        <th>Số lần mua</th>
+    </tr>
+    @foreach (var item in @ViewBag.dsDC)
+    {
+        <tr>
+            <td>@item.maKH</td>
+            <td>@item.hoTen</td>
+            <td>@item.diaChi</td>
+            <td>@item.dienThoai</td>
+            <td>@item.soLanMua </td>
+        </tr>
+    }
+</table>
+<h2>Danh sách khách hàng có số lần mua >= 10</h2>
+<table>
+    <tr>
+        <th>Mã KH</th>
+        <th>Họ tên</th>
+        <th>Địa chỉ</th>
+        <th>Điên thoại</th>
+        <th>Số lần mua</th>
+    </tr>
+    @foreach (var item in @ViewBag.dsLM)
+    {
+        <tr>
+            <td>@item.maKH</td>
+            <td>@item.hoTen</td>
+            <td>@item.diaChi</td>
+            <td>@item.dienThoai</td>
+            <td>@item.soLanMua </td>
+        </tr>
+    }
+</table>
+
